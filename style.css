@@ -23,7 +23,7 @@
 
 *{ box-sizing: border-box; }
 
-html{ scroll-behavior: smooth; }
+html{ scroll-behavior: smooth; touch-action: pan-y; }
 
 body{
   margin: 0;
@@ -31,6 +31,7 @@ body{
   color: var(--ink);
   font-family: var(--serif-ar-body);
   overflow-x: hidden;
+  touch-action: pan-y;
 }
 
 body:not(.is-entered) .section,
@@ -102,7 +103,7 @@ body.is-entered .welcome-overlay{
   display: none;
 }
 
-img{ max-width: 100%; display: block; }
+img{ max-width: 100%; display: block; touch-action: pan-y; }
 
 .section{
   position: relative;
