@@ -6,7 +6,7 @@
 const SITE_CONFIG = {
 
   /* أسماء العروسين — Groom & Bride names */
-  groomName: "Youmna1",
+  groomName: "Youmna",
   brideName: "Ebrahim",
 
   /* موعد الزفاف (يُستخدم للعد التنازلي فقط — لا يظهر كوقت في صفحة المكان)
