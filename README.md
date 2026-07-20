@@ -7,6 +7,7 @@ style.css
 script.js
 config.js          ← كل البيانات القابلة للتعديل من هنا
 assets/
+
   images/           ← الصور الأربع (hero, invitation, location, comments-bg)
   music/            ← ضع ملف الموسيقى هنا باسم song.mp3
 ```
