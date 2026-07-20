@@ -18,7 +18,7 @@ const SITE_CONFIG = {
   googleMapsUrl: "https://maps.app.goo.gl/qGXXbu6fGJ53B4uR8",
 
   /* رابط ملف الموسيقى — Background music file path */
-  musicUrl: "assets/bk.mp3",
+  musicUrl: "assets/bk.mp3.mp3",
 
   /* نص الدعوة (مرجعي/لذوي الإعاقة البصرية فقط — النص الأساسي مرسوم داخل الصورة)
      Invitation copy — kept here for editability & accessibility (screen readers).
