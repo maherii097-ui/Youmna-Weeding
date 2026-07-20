@@ -8,6 +8,19 @@ document.addEventListener('DOMContentLoaded', () => {
   console.log('[تشخيص] firebase معرّف؟', typeof firebase !== 'undefined');
   console.log('[تشخيص] SITE_CONFIG.db جاهز؟', !!SITE_CONFIG.db);
 
+  // Fix viewport-height to a stable value to avoid image "zoom" when
+  // mobile browser chrome (address/tool bars) hide or show during scroll.
+  function setFixedVh() {
+    const vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+    console.log('[تشخيص] --vh ثابت تم تعيينه إلى', vh);
+  }
+
+  // Set once on initial load. Update only on orientation change (not on scroll/resize)
+  // to keep the layout stable while the user scrolls.
+  setFixedVh();
+  window.addEventListener('orientationchange', setFixedVh);
+
   const welcomeOverlay = document.getElementById('welcomeOverlay');
   const enterBtn = document.getElementById('enterBtn');
   const body = document.body;
